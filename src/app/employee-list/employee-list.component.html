@@ -1,0 +1,23 @@
+<div class="container">
+  <p>employee-list component</p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>employee_name</th>
+        <th>employee_salary</th>
+        <th>employee_age</th>
+        <th>profile_image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let employee of employees">
+        <td>{{employee.id}}</td>
+        <td>{{employee.employee_name}}</td>
+        <td>{{employee.employee_salary}}</td>
+        <td>{{employee.employee_age}}</td>
+        <td>{{employee.profile_image}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
